@@ -1,0 +1,8 @@
+svgs/*
+pngs_seperate/*
+pngs_joined/*
+matrices/*
+fonts/*
+.venv
+signmap.txt
+__pycache__/
