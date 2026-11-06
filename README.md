@@ -5,7 +5,7 @@ Turns a set of small pixel-art letter images into an installable font (`.ttf` an
 ## Explanation for non-programmers
 
 Open pngs_joined folder.
-Paste any number of images, each of the same height in pixels. The width is not an issue. Every letter should be black on a transparent backgroud,
+Paste any number of images, each of the same height in pixels. The width is not an issue. Every letter should be black on a transparent backgroud.
 Divide the letters with a single pixel wide vertical line of non-black color.
 
 I used blue for the testing, the pipeline should work with other colors. Blue line will be replaced with transparency in the resulting cut images.
@@ -20,10 +20,14 @@ python main.py -font --hdist 2 --vdist 1 --name "My Pixel Font" --baseline 2 #hd
 
 !!!A signmap.txt will be automatically generated on the first run. Fill the positions
 with signs corresponding to them like:
+
+```bash
 1 A
 2 B
 3 C
 ...
+```
+
 to do so look at pngs_seperate folder and see what sign was assinged what number
 (the order SHOULD be the order the pngs provided by you were in the pngs_joined, individual signs left to right on each of them)
 
